@@ -7,22 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script>
-    function insert(num){
-        document.form.textView.value = document.form.textView.value+num;
-    }
-    function equal(){
-        var eq = document.form.textView.value;
-        if(eq){
-            document.form.textView.value = eval(document.form.textView.value);
-        }
-    }
-    function c(){
-        document.form.textView.value=" ";
-    }
-    
-    
-</script>
+<script src="index.js"></script>
 
 <body>
     <center>
@@ -33,7 +18,7 @@
             <input type="button" value="1" onclick="insert(1)">
             <input type="button" value="2" onclick="insert(2)">
             <input type="button" value="3" onclick="insert(3)">
-            <input type="button" value="+"  onclick="insert('+')">
+            <input type="button" value="+" onclick="insert('+')">
             <br><br>
             <input type="button" value="4" onclick="insert(4)">
             <input type="button" value="5" onclick="insert(5)">
