@@ -6,41 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculater</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <script src="index.js">
+    </script>
+    <script src="https://kit.fontawesome.com/79dd8f83f9.js" crossorigin="anonymous"></script>
+        
+        
 </head>
 
-<script src="index.js">
-
-    
-</script>
-
 <body>
+    <div class="container">
     <center>
-
-        <form name="form">
-            <input type="text" name="textView">
+        <h2>Calculater</h2>
+        
+        <form name="form" class="form">
+            <input type="text" class="textview" name="textView">
             <br><br>
-            <input type="button" value="1" onclick="insert(1)">
-            <input type="button" value="2" onclick="insert(2)">
-            <input type="button" value="3" onclick="insert(3)">
-            <input type="button" value="+" onclick="insert('+')">
-            <br><br>
-            <input type="button" value="4" onclick="insert(4)">
-            <input type="button" value="5" onclick="insert(5)">
-            <input type="button" value="6" onclick="insert(6)">
-            <input type="button" value="-" onclick="insert('-')">
-            <br><br>
-            <input type="button" value="7" onclick="insert(7)">
-            <input type="button" value="8" onclick="insert(8)">
-            <input type="button" value="9" onclick="insert(9)">
-            <input type="button" value="*" onclick="insert('*')">
-            <br><br>
-            <input type="button" value="0" onclick="insert(0)">
-            <input type="button" value="/" onclick="insert('/')">
-            <input type="button" value="=" onclick="equal()">
-            <input type="button" value="C" onclick="c()">
+            <input type="button" value="1" class="button" onclick="insert(1)">
+            <input type="button" value="2" class="button" onclick="insert(2)">
+            <input type="button" value="3" class="button" onclick="insert(3)">
+            <button type="button" value="+" class="button" onclick="insert('+')"><i class="fa-solid fa-plus"></i></button>
+            <br>
+            <input type="button" value="4" class="button" onclick="insert(4)">
+            <input type="button" value="5" class="button" onclick="insert(5)">
+            <input type="button" value="6" class="button" onclick="insert(6)">
+            <button type="button" value="-" class="button" onclick="insert('-')"><i class="fa fa-minus" aria-hidden="true"></i></button>
+            <br>
+            <input type="button" value="7" class="button" onclick="insert(7)">
+            <input type="button" value="8" class="button" onclick="insert(8)">
+            <input type="button" value="9" class="button" onclick="insert(9)">
+            <button type="button" value="*" class="button" onclick="insert('*')"><i class="fa-solid fa-xmark"></i></button>
+            <br>
+            <input type="button" value="0" class="button" onclick="insert(0)">
+            <button type="button" value="/" class="button" onclick="insert('/')"><i class="fa-solid fa-divide"></i></button>
+            <input type="button" value="=" class="button" onclick="equal()">
+            <button type="button" value="C"  class="button" onclick="c()"><i class="fa-solid fa-rotate-left"></i></button>
             <br>
         </form>
     </center>
+    <br>
+    <a href="">
+
+        <i class="fa-solid fa-moon"></i>
+    </a>
+    </div>
 
 
 </body>
